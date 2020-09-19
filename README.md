@@ -1,5 +1,5 @@
 # Audio_Text_Manipulation
-A web app helpful for Audio/ Text Manipulation.
+A web app helpful for Audio/ Text Manipulation (Python Flask)
 
 
 ## Installation and Dependencies

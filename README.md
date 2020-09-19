@@ -48,4 +48,7 @@ python3 app.py
 - Kindly do not move, delete, rename or modify any files (unless you know what you are doing).
 
 
+- As of now, Audio Transcription transcribes '.wav' files only.
 
+
+- Pardon me for my HTML/CSS skills. :?

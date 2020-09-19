@@ -1,4 +1,4 @@
-SpeechRecognition == 3.8.
+SpeechRecognition == 3.8.1
 flask == 1.1.2
 urllib3 == 1.25.10
 googletrans == 3.0.0

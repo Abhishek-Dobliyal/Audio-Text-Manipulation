@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: white;
+}
+
+#container{
+    display: inline-block;
+    margin: 45px 50px;
+}
+
+#speechToText, #translated-text, #extracted-text{
+    margin: 45px 5px;
+    border: 2px solid aquamarine;
+    border-radius: 6px;
+    width: 560px;
+    padding: 0px 35px;
+    display: inline-block;
+}
+
+#translate-label, #tts-label, .file-choose, .transcribe, .img-choose, .fetch-txt-label{
+    background-color: red;
+    position: absolute;
+    padding: 8px 10px;
+    border: 2px solid white;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 12px 10px;
+    margin: 31px 1px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: yellow;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+ #translate-label{
+    background-color: red;
+    position: absolute;
+    padding: 8px 10px;
+    border: 2px solid white;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.file, .submit, .translate-submit, .tts-submit, .extract-submit{
+    display: block;
+    width: 160px;
+    height: 55px;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.translate-text, .tts-input{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: larger;
+    width: 350px;
+    height: 48px;
+    border: 3px solid seagreen;
+    border-radius: 8px;
+    padding: 12px 8px;
+    background-color: beige;
+
+
+}
+
+body{
+    background-image: url("/static/img/bg.jpg");
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+p{
+    line-height: 1.6;
+    font-size: larger;
+}
+
+span {
+    color: white;
+    font-size: 23px;
+    margin-right: 67px;
+    display: inline-block;
+    float: right;
+    position: relative;
+}
+
+span a{
+    color: #6aeb57;
+    transition-duration: 0.2s;
+}
+
+span a:hover{
+    color: yellow;
+    text-decoration: none;
+}
+
+#language{
+    font-size: 20px;
+    color: palegreen;
+}
+
+#language-dropdown {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: wheat;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 4px 14px;
+    margin: 6px 7px;
+    -webkit-appearance: none;
+}
+
+#choose-languages{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 21px;
+
+}

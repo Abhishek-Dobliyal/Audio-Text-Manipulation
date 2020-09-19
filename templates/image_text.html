@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    <title>
+        Image To Text
+    </title>
+{% endblock %}
+
+{% block body %}
+    <div id="container">
+        <h1>Welcome to Image to Text</h1>
+        <h2>Extract text from an image</h2>
+
+        <form method="POST" enctype="multipart/form-data">
+            <label class="img-choose" for="submit">Choose a File</label>
+            <input type="file" name="file" accept="image/*" class="file">
+            <br>
+            <label class="fetch-txt-label" for="submit">Fetch Text</label>
+            <input type="submit" name="action" value="Transcribe" class="extract-submit">
+            <br>
+        </form>
+
+        <div id="extracted-text">
+            <h2>Recieved Text</h2>
+            {% if extracted_text %}
+                <p>{{ extracted_text }}</p>
+            {% else %}
+                <p>No File Selected/ Error Processing File</p>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

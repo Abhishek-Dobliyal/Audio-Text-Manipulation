@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    <title>Speech Recognition</title>
+{% endblock %}
+
+{% block body %}
+<div id="container">
+    <h1>Welcome to Text To Speech</h1>
+
+    <form method="POST">
+        <input class="tts-input" type="text" name="text" placeholder="Type Here...">
+        <br>
+        <label for="submit" id="tts-label">Speak</label>
+        <input type="submit" name="action" class="tts-submit">
+        <br><br><br>
+        <label for="choose-languages" id="choose-languages">Language Accent: </label>
+        <select name="languages" id="language-dropdown">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="ja">Japanese</option>
+            <option value="fr">French</option>
+        </select>
+    </form>
+</div>
+{% endblock %}

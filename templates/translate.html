@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    <title>Translate</title>
+{% endblock %}
+
+{% block body %}
+<div id="container">
+    <h1>Welcome to Translate</h1>
+
+    <form method="POST">
+        <input class="translate-text" type="text" name="text" placeholder="Type Here...">
+        <br>
+        <label for="submit" id="translate-label">Translate Now</label>
+        <input type="submit" name="action" class="translate-submit">
+        <br><br><br>
+        <label for="choose-languages" id="choose-languages">Translate to: </label>
+        <select name="languages" id="language-dropdown">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="ja">Japanese</option>
+            <option value="fr">French</option>
+        </select>
+    </form>
+
+    <div id="translated-text">
+        <h2>Translate <span id="language">[ {{ language_from }} to {{ language_to }} ]</span></h2>
+        {% if translated_text %}
+            <p>{{ translated_text }}</p>
+        {% else %}
+            <p>No Data Found/ Error Translating the Data :(</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

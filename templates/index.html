@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    <title>
+        Transcribe
+    </title>
+{% endblock %}
+
+{% block body %}
+    <div id="container">
+        <h1>Welcome to Audio Transcribe !</h1>
+        <h2>Convert Your Audio to Text</h2>
+
+        <form method="POST" enctype="multipart/form-data">
+            <label class="file-choose" for="submit">Choose a File</label>
+            <input type="file" name="file" accept=".wav"/ class="file">
+            <br>
+            <label class="transcribe" for="submit">Transcribe</label>
+            <input type="submit" name="action" value="Transcribe" class="submit">
+            <br>
+        </form>
+
+        <div id="speechToText">
+            <h2>Transcipt</h2>
+            {% if text %}
+                <p>{{ text }}</p>
+            {% else %}
+                <p>No File Selected/ Error Processing File</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <div id="link-container" align="right">
+        <span><h3>Also Try  <a href="/translate" target="_blank">Translation</a></h3></span>
+        <span><h3>Also Try  <a href="/text_to_speech" target="_blank">Text To Speech</a></h3></span>
+        <span><h3>Also Try  <a href="/image_text" target="_blank">Image To Text</a></h3></span>
+    </div>
+{% endblock %}
